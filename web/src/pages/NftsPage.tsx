@@ -1415,7 +1415,7 @@ function QrModal({ nft, onClose }: { nft: NFT; onClose: () => void }) {
   const url = useMemo(() => {
     // Always use production URL for QR deep-links so printed codes work
     // regardless of whether the admin app is running on localhost.
-    const base = 'https://alankharisov.github.io/idenity/';
+    const base = 'https://borisven.github.io/MARKI_SOL/';
     if (nft.nfcUid) return `${base}?nfc=${encodeURIComponent(nft.nfcUid)}`;
     return `${base}?nft=${encodeURIComponent(nft.id)}`;
   }, [nft.id, nft.nfcUid]);
